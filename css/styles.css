@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  max-width: 1440px;
+  margin: 25px auto;
+}
+
+/* ==========SIDEBAR STYLES========== */
+
+.sidebar {
+  background-color: rgb(49, 66, 165);
+  padding: 200px 50px;
+  color: #fff;
+  text-align: center;
+}
+
+.img {
+  margin-bottom: 15px;
+}
+
+.sidebar__name {
+  font-size: 30px;
+  line-height: 1.6;
+}
+
+.sidebar__developer {
+  font-size: 33px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.sidebar__developer::after {
+  display: block;
+  content: "";
+  height: 5px;
+  width: 140px;
+  background-color: #fff;
+  position: absolute;
+  top: 45px;
+  left: 175px;
+}
+
+.sidebar__phone {
+  font-size: 28px;
+  color: #fff;
+}
+
+.sidebar__phone--hover:hover {
+  color: rgb(16, 230, 16);
+}
+
+.sidebar__sotial {
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+
+.sidebar__icon {
+  margin: 10px;
+}
+
+.sidebar__info {
+  color: #fff;
+  font-size: 28px;
+  line-height: 2.2;
+}
+
+.sidebar__info--hover:hover {
+  color: rgb(16, 230, 16);
+}
+
+.bottom {
+  text-decoration: none;
+  border-bottom: 2px solid rgb(16, 230, 16);
+  color: rgb(217, 245, 61);
+}
+
+.or {
+  margin: 20px;
+}
+
+.sidebar__language {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.sidebar__language-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(233, 170, 34);
+}
+
+.sidebar__item {
+  font-size: 28px;
+  margin-left: 40px;
+}
+
+/* ==========CONTENT STYLES========== */
+
+.content {
+  margin-bottom: 50px;
+}
+
+.content__career {
+  position: relative;
+  color: rgb(29, 161, 238);
+  line-height: 2.6;
+  font-size: 30px;
+}
+
+.content__career::after {
+  display: block;
+  content: "";
+  height: 5px;
+  background-color: rgb(29, 161, 238);
+  position: absolute;
+  top: 45px;
+  right: 0px;
+}
+
+.career::after {
+  width: 520px;
+}
+
+.skills::after {
+  width: 670px;
+}
+
+.education::after {
+  width: 500px;
+}
+
+.projects::after {
+  width: 630px;
+}
+
+.portfolio::after {
+  width: 625px;
+}
+
+.experience::after {
+  width: 520px;
+}
+
+.content__title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.content__skills {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 30px;
+  list-style: square;
+}
+
+.content__simple-text {
+  font-size: 24px;
+}
+
+.content__link--hover:hover {
+  color: rgb(241, 107, 18);
+  text-decoration: none;
+  border-bottom: 2px solid rgb(241, 107, 18);
+}
+
+.content__project-name {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 2.2;
+}
