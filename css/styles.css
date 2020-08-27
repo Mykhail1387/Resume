@@ -9,7 +9,7 @@
   justify-content: space-around;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   max-width: 1440px;
-  margin: 25px auto;
+  margin: 0 auto;
 }
 
 /* ==========SIDEBAR STYLES========== */
@@ -31,7 +31,7 @@
 }
 
 .sidebar__developer {
-  font-size: 33px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
@@ -46,7 +46,10 @@
   background-color: #fff;
   position: absolute;
   top: 45px;
-  left: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .sidebar__phone {
@@ -107,6 +110,7 @@
 
 .content {
   margin-bottom: 50px;
+  padding: 0 15px;
 }
 
 .content__career {
@@ -123,7 +127,7 @@
   background-color: rgb(29, 161, 238);
   position: absolute;
   top: 45px;
-  right: 0px;
+  right: -140px;
 }
 
 .career::after {
@@ -175,5 +179,123 @@
 .content__project-name {
   font-size: 24px;
   font-weight: bold;
-  line-height: 2.2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ==========================max-width: 767 px============================= */
+
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column-reverse;
+    margin: 0px auto;
+  }
+  /* ==========SIDEBAR STYLES========== */
+  .sidebar {
+    padding: 25px 20px;
+  }
+
+  .img {
+    width: 250px;
+  }
+
+  .sidebar__developer::after {
+    height: 3px;
+  }
+
+  .sidebar__info {
+    font-size: 24px;
+  }
+
+  .sidebar__language-title {
+    font-size: 26px;
+    line-height: 2;
+  }
+
+  .sidebar__item {
+    font-size: 24px;
+  }
+  /* ==========CONTENT STYLES========== */
+
+  .content__career::after {
+    display: none;
+  }
+
+  .content__career {
+    font-size: 24px;
+  }
+
+  .content__title {
+    font-size: 22px;
+  }
+
+  .content__skills {
+    font-size: 20px;
+  }
+
+  .content__simple-text {
+    font-size: 20px;
+  }
+
+  .content__project-name {
+    font-size: 22px;
+  }
+}
+
+/* =========================min-width: 768px == max-width: 1023 px============================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* ==========SIDEBAR STYLES========== */
+  .img {
+    width: 305px;
+  }
+
+  .sidebar__developer {
+    font-size: 28px;
+  }
+
+  /* ==========CONTENT STYLES========== */
+
+  .content__career::after {
+    display: none;
+  }
+}
+
+/* =========================min-width: 1024px === (max-width: 1439px)============================= */
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* ==========SIDEBAR STYLES========== */
+  .img {
+    width: 350px;
+  }
+
+  /* ==========CONTENT STYLES========== */
+  .content__career::after {
+    right: 0px;
+  }
+
+  .career::after {
+    width: 320px;
+  }
+
+  .skills::after {
+    width: 470px;
+  }
+
+  .education::after {
+    width: 300px;
+  }
+
+  .projects::after {
+    width: 430px;
+  }
+
+  .portfolio::after {
+    width: 425px;
+  }
+
+  .experience::after {
+    width: 320px;
+  }
 }
